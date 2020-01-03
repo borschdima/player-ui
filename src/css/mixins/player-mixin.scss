@@ -100,6 +100,8 @@ $player: ".player";
 
         #{$player}__speed {
             position: relative;
+            width: 70px;
+            text-align: center;
 
             &__container {
                 display: none;
@@ -113,11 +115,11 @@ $player: ".player";
             border-radius: 5px;
             background: $background;
             top: 0;
-            left: 0;
+            left: 50%;
             transform-origin: left;
             display: flex;
             flex-direction: column;
-            transform: translate(-20%, -100%);
+            transform: translate(-50%, -100%);
             box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.2);
 
             .speed__value {
