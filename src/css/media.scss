@@ -1,0 +1,22 @@
+@media (hover: hover) and (pointer: fine) {
+    .player {
+        &__play-btn:hover::after {
+            border-left-color: lighten($default-primary, 50%) !important;
+        }
+        &__play-btn--active:hover::after {
+            border: 14px solid lighten($default-primary, 50%) !important;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .player {
+        padding: 10px 10px !important;
+        &__speed,
+        &__volume,
+        &__download,
+        &__upload {
+            font-size: 1.1em !important;
+        }
+    }
+}

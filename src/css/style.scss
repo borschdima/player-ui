@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic");
+@import "config";
+@import "./mixins/range-mixin";
+@import "./mixins/player-mixin";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* prevent tap highlight color / shadow */
+    -webkit-user-select: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+@include player($class-default, $default-primary, $default-background);
+@include player($class-dark, $dark-primary, $dark-background);
+@include player($class-megatron, $megatron-primary, $megatron-background);
+@include player($class-quepal, $quepal-primary, $quepal-background);
+
+@include range($class-default, $range-thumb-color-default, $range-track-color-default, $range-track-progress-default);
+@include range($class-megatron, $range-thumb-color-megatron, $range-track-color-megatron, $range-track-progress-megatron);
+@include range($class-dark, $range-thumb-color-dark, $range-track-color-dark, $range-track-progress-dark);
+@include range($class-quepal, $range-thumb-color-quepal, $range-track-color-quepal, $range-track-progress-quepal);
+//////////////////////MEDIA
+@import "media";

@@ -1,0 +1,33 @@
+/*Colors*/
+$default-background: linear-gradient(to right, #acaba8, #f2f2f2, #dbdbdb, #eaeaea);
+$default-primary: #222;
+$range-thumb-color-default: #333333;
+$range-track-color-default: #ecf0f1;
+$range-track-progress-default: #333333;
+
+$dark-background: linear-gradient(to right, #232526, #414345);
+$dark-primary: #cccccc;
+$range-thumb-color-dark: #ecf0f1;
+$range-track-color-dark: #ecf0f1;
+$range-track-progress-dark: #000;
+
+$megatron-background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+$megatron-primary: #000000;
+$range-thumb-color-megatron: #ecf0f1;
+$range-track-color-megatron: #ecf0f1;
+$range-track-progress-megatron: #444;
+
+$quepal-background: linear-gradient(to right, #11998e, #38ef7d);
+$quepal-primary: #c3f1d6;
+$range-thumb-color-quepal: #ecf0f1;
+$range-track-color-quepal: #ecf0f1;
+$range-track-progress-quepal: #444;
+
+/*Classes*/
+$class-default: "player--default";
+$class-dark: "player--dark";
+$class-megatron: "player--megatron";
+$class-quepal: "player--quepal";
+
+$range-track-size: 6px;
+$range-thumb-size: 16px;
